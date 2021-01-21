@@ -32,6 +32,8 @@ namespace SwaggerDemo
                             Title = "SwaggerDemo",
                             Version = "v1"
                         });
+                    // Comment the line below to break the swagger generator.
+                    c.CustomSchemaIds(type => type.FullName);
                 });
         }
 
